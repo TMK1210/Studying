@@ -44,6 +44,6 @@ int main(){
         case manager: cout << "manager."; break;
         case researcher: cout << "researcher."; break;
         case secretary: cout << "secretary."; break;
-    }
+    } 
     return 0;
 }

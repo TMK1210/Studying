@@ -1,6 +1,6 @@
 /*
-A point on the two-dimensional plane can be represented by two numbers: an x coordi
-nate and a y coordinate. For example, (4,5) represents a point 4 units to the right of the
+A point on the two-dimensional plane can be represented by two numbers: an x coordinate
+ and a y coordinate. For example, (4,5) represents a point 4 units to the right of the
 vertical axis, and 5 units up from the horizontal axis. The sum of two points can be
 defined as a new point whose x coordinate is the sum of the x coordinates of the two
 points, and whose y coordinate is the sum of the y coordinates.

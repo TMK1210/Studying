@@ -7,6 +7,7 @@ minutes-seconds, stores the result in a time structure, and finally displays the
 */
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 struct Time {
@@ -30,6 +31,7 @@ int main() {
     t3.seconds = totalsecs;
 
 
-    cout << "The combined time is: " << t3.hours << ":" << t3.minutes << ":" << t3.seconds << endl;
+    cout << "The combined time is: " << setfill('0') << setw(2) << t3.hours << ":" << setfill('0') 
+    << setw(2) << t3.minutes << ":" << setfill('0') << setw(2) << t3.seconds << endl;
     return 0;
 }

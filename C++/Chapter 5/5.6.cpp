@@ -17,12 +17,12 @@ struct Time {
     int seconds;
 };
 
-long time_to_secs(int hrs, int min, int sec){
-    long totalsecs = hrs*3600 + min*60 + sec;
+int time_to_secs(int hrs, int min, int sec){
+    int totalsecs = hrs*3600 + min*60 + sec;
     return totalsecs;
 }
 
-Time secs_to_time(long totalsecs){
+Time secs_to_time(int totalsecs){
     Time t;
     
     t.hours = totalsecs / 3600; totalsecs %= 3600;
@@ -41,8 +41,8 @@ int main() {
     cout << "Enter the 2nd time value (in the format of 12:59:59): ";
     cin >> t2.hours >> dummychar >> t2.minutes >> dummychar >> t2.seconds;
 
-    long time1 = time_to_secs(t1.hours, t1.minutes, t1.seconds);
-    long time2 = time_to_secs(t2.hours, t2.minutes, t2.seconds);
+    int time1 = time_to_secs(t1.hours, t1.minutes, t1.seconds);
+    int time2 = time_to_secs(t2.hours, t2.minutes, t2.seconds);
 
     t3 = secs_to_time(time1 + time2);
 
