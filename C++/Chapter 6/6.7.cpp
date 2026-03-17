@@ -31,7 +31,9 @@ public:
     void obtain(){
         cout << "Enter an angle degrees: "; cin >> degrees;
         cout << "Enter an angle minutes: "; cin >> minutes;
-        cout << "Enter the direction: "; cin >> direction;
+        while (direction != 'N' && direction != 'S' && direction != 'E' && direction != 'W'){
+            cout << "Enter the direction: "; cin >> direction;
+        }
     }
     void display(){
         cout << "The angle: " << degrees << "°" << minutes << "' " << direction << endl;
